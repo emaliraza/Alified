@@ -2,7 +2,7 @@
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
-    --color-heading: #fff;
+    --color-heading: #2584ff;
     --color-body: #918ca4;
     --color-body-darker: #5c5557;
     --color-border: #ccc;
@@ -228,8 +228,8 @@ a {
 
 .btn--outline {
     background: #fff;
-    color: var(--color-heading);
-    border: 2px solid var(--color-heading);
+    color: var(--color-primary)
+    border: 2px solid var(--color-primary);
 }
 
 .btn--outline:hover {
@@ -339,6 +339,9 @@ a {
     background: var(--color-secondary);
     color: #fff;
 }
+.card--primary .badge--primary {
+    background: #126de4;
+}
 
 .card--secondary .badge--secondary {
     background: #02cdf1;
@@ -346,6 +349,9 @@ a {
 }
 
 /*PLANS*/
+.plan {
+    transition: transform 0.2s ease-out;
+}
 
 .plan__name {
     color: #fff;
@@ -379,6 +385,7 @@ a {
 
 }
 
+
 .plan--popular .card__header {
     position: relative;
 }
@@ -390,6 +397,10 @@ a {
     position: absolute;
     top: -6px;
     right: 5%;
+}
+
+.plan:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (min-width: 1024px) {
@@ -835,4 +846,13 @@ a {
     .footer__heading {
         font-size: 1.5rem;
     }
+}
+/*PLANS BLOCK*/
+.block-plans .grid {
+    gap: 8rem 4rem;
+
+}
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
 }
